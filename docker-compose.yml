@@ -3,8 +3,8 @@ version: "3.8"
 volumes:
   vol-emqx-data:
     name: foo-emqx-data
-#  vol-emqx-etc:
-#    name: foo-emqx-etc
+  #  vol-emqx-etc:
+  #    name: foo-emqx-etc
   vol-emqx-log:
     name: foo-emqx-log
 
@@ -39,7 +39,7 @@ services:
     links:
       - mongo
     extra_hosts:
-      - "localhost:192.168.100.29"
+      - "localhost:192.168.43.48"
 
     environment:
       EMQX_NAME: exine
