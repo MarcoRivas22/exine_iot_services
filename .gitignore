@@ -1,2 +1,4 @@
 mongodata
 .env
+.log
+exine_iot_app
