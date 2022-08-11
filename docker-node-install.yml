@@ -1,13 +1,4 @@
 version: "3.8"
-#
-volumes:
-  vol-emqx-data:
-    name: foo-emqx-data
-  #  vol-emqx-etc:
-  #    name: foo-emqx-etc
-  vol-emqx-log:
-    name: foo-emqx-log
-#
 
 services:
   node:
@@ -15,7 +6,7 @@ services:
     image: "node:14"
     working_dir: /home/node/app
     volumes:
-      - ./app/:/home/node/exine_iot_app
+      - ./app/:/home/node/app
     ports:
       - "3000:3000"
       - "3001:3001"
