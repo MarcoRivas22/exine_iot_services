@@ -1,4 +1,6 @@
-mongodata
+
+.ENV
 .env
 .log
-exine_iot_app
+app
+mongodata
